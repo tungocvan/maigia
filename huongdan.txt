@@ -1,0 +1,18 @@
+B1: Copy source vào thư mục  PHP hoặc git clone từ github
+git clone .....
+cd php
+cat Default*.00? > Default_2200aa6b48ffef6e1968_20210711134445_archive.zip
+rm -rf Default*.00?
+B2: Phân Quyền:
+chown -R root /opt/php
+chmod 777 /opt/php
+
+B3: Tạo Database:
+1. mysql -u root -p'9603597Van'
+2. CREATE DATABASE db_maigia CHARACTER SET utf8 COLLATE utf8_general_ci;
+
+B4: Tiến hành cài đặt:
+http://172.30.228.185/installer.php
+mysql -u root -p'9603597Van'
+use db_maigia;
+UPDATE `wpr5_users` SET `user_pass` = '$P$BRxjC0Tuc5DmtyD4L.z0ChC95gqXjo1' WHERE `wpr5_users`.`ID` = 1;
